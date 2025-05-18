@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ein Geschenk, das rockt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem 2rem 2rem;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      animation: fadeIn 2s ease-in;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .description {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    .description h2 {
+      color: #ffd700;
+      margin-bottom: 1rem;
+    }
+    .description p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+    }
+    .note {
+      text-align: center;
+      font-style: italic;
+      margin: 3rem 1rem;
+      color: #ccc;
+      animation: fadeIn 3s ease-in;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dein Geschenk ist unterwegs ...</h1>
+    <p>Und es wird dir den Beat ins Herz legen 🎸</p>
+  </header>
+
+  <div class="gallery">
+    <img src="https://images.ctfassets.net/m8onsx4mm13s/6Kq68kLVVjOdiayOwqOy4q/24675181b116bc39beaf06173cc40e55/Cort_B4_Element_OPBR.jpg" alt="Bass Front">
+    <img src="https://cdnb.artstation.com/p/assets/images/images/041/726/890/large/johannes-weiss-cortb4elem-back.jpg?1632485295" alt="Bass Back">
+    <img src="https://www.musik-produktiv.de/pic-010128307xl/cort-b4-element-opbb.jpg" alt="Bass Detail">
+    <img src="https://i.ytimg.com/vi/sM7l_e5Y-wU/maxresdefault.jpg" alt="Bass in Aktion">
+  </div>
+
+  <div class="description">
+    <h2>Cort B4 Element – Für deinen Sound</h2>
+    <p>
+      Der Cort B4 Element vereint Klangqualität, edle Materialien und ein atemberaubendes Design. Die Open Pore Burgundy Red Lackierung hebt die natürliche Maserung hervor und macht jedes Instrument zu einem Unikat.
+    </p>
+    <p>
+      Ausgestattet mit Bartolini-Tonabnehmern, Mahagoni-Korpus und 5-teiligem Hals für maximale Stabilität – dieser Bass ist gemacht, um gehört zu werden. Ob auf der Bühne oder im Studio: Du wirst ihn lieben.
+    </p>
+  </div>
+
+  <div class="note">
+    Nur noch ein kleines bisschen Geduld – er ist bald bei dir. ❤️
+  </div>
+</body>
+</html>
